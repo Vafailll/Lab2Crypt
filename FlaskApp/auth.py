@@ -72,7 +72,7 @@ def sendmail(addr_to, temp_pass):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login("YOUR EMAIL", "MAIL_PASS*****")
-    server.sendmail("makssav2012@gmail.com", addr_to, msg.as_string())
+    server.sendmail("YOUR_EMAIL", addr_to, msg.as_string())
     server.quit()
 
 

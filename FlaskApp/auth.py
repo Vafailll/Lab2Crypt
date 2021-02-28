@@ -36,7 +36,7 @@ def signup_post():
     rand = str(randint(1000, 9999))
     #file = open("text.txt", "w")
     #file.write(rand)
-    mail = 'maksssav2012@gmail.com'
+    mail = 'YOUR EMAIL'
     sendmail(mail, rand)
     user = User.query.filter_by(email=email).first()
 
